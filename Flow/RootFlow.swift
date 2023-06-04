@@ -26,6 +26,8 @@ struct RootFlow<Router: Routing>: View {
                         // pros:
                         // - very similar to our current state
                         // - very simple
+                        // - deeplinking should be easy
+                        // - navigation is controlled by state
                         // cons:
                         // - different behavior of NavigationStack when changing the parent view
                         // - when changing the parent view, NavigationView popped all of the children that were no longer relevant
@@ -36,6 +38,14 @@ struct RootFlow<Router: Routing>: View {
                         // the problem is that if we change the state in the parent to state = .dashboard
                         // then the parent forgets about the children, but they are stuck in the navigation stack and they do not pop
                         // we have to wait for the pop animation and then change the state to change to parent/root
+
+                        // there are some things we could do to prevent popping several levels of Views
+                        // for example we can use sheets, to easily dismiss the whole Flow and then just changing the state of the parent View
+
+                        // BUT! sometimes we really need to pop to the root view, for example if the user logs out, then we clear the whole navigation stack a show the login view
+                        // and if we need to pop to the root view, we need to use NavigationPath
+                        // and if we use NavigationPath, then everything has to be done with NavigationPath
+                        // manually pushing screens do not add values to NavigationPath :(
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                             state = .dashboard
                         }
