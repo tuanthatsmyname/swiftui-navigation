@@ -1,29 +1,28 @@
 import SwiftUI
 import SwiftUINavigation
 
-struct ActivationFlow: View {
+struct ActivationFlow<Router: Routing>: View {
     enum Destination {
         case stepOne
     }
 
+    @ObservedObject var router: Router
     var onSuccessfullActivation: () -> Void
-
-    @State private var destination: Destination?
 
     var body: some View {
         ActivationView(
-            onContinue: { destination = .stepOne }
+            onContinue: {
+                router.push(Destination.stepOne)
+            }
         )
-        .navigationDestination(
-            unwrapping: $destination,
-            case: /Destination.stepOne
-        ) { _ in
-            ActivationStepOneFlow(
-                onSuccessfullActivation: {
-                    destination = nil
-                    onSuccessfullActivation()
-                }
-            )
+        .navigationDestination(for: Destination.self) { destination in
+            switch destination {
+            case .stepOne:
+                ActivationStepOneFlow(
+                    router: router,
+                    onSuccessfullActivation: onSuccessfullActivation
+                )
+            }
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE86B3CF2A4EC14A002D90F5 /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86B3CE2A4EC14A002D90F5 /* TestApp.swift */; };
 		BE9F501A2A28C43A00A6C281 /* FlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F50192A28C43A00A6C281 /* FlowApp.swift */; };
 		BE9F501E2A28C43B00A6C281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F501D2A28C43B00A6C281 /* Assets.xcassets */; };
 		BE9F50212A28C43B00A6C281 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F50202A28C43B00A6C281 /* Preview Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE86B3CE2A4EC14A002D90F5 /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 		BE9F50162A28C43A00A6C281 /* Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9F50192A28C43A00A6C281 /* FlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowApp.swift; sourceTree = "<group>"; };
 		BE9F501D2A28C43B00A6C281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				BEBE71F02A2BBE320021232D /* Login */,
 				BE9F50192A28C43A00A6C281 /* FlowApp.swift */,
 				BE9F50272A28C47C00A6C281 /* RootFlow.swift */,
+				BE86B3CE2A4EC14A002D90F5 /* TestApp.swift */,
 				BE9F501D2A28C43B00A6C281 /* Assets.xcassets */,
 				BE9F501F2A28C43B00A6C281 /* Preview Content */,
 			);
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE86B3CF2A4EC14A002D90F5 /* TestApp.swift in Sources */,
 				BEBE71F72A2BC0520021232D /* ActivationView.swift in Sources */,
 				BEBE71FB2A2BC06C0021232D /* ActivationStepTwoView.swift in Sources */,
 				BEBE71F92A2BC0610021232D /* ActivationStepOneView.swift in Sources */,
