@@ -116,7 +116,6 @@
 			children = (
 				BEBE71F82A2BC0610021232D /* ActivationStepOneView.swift */,
 				BEBE72002A2C98600021232D /* ActivationStepOneFlow.swift */,
-				BEBE72032A2CA35B0021232D /* DashboardFlow.swift */,
 			);
 			path = StepOne;
 			sourceTree = "<group>";
@@ -132,6 +131,7 @@
 		BEBE72022A2CA3490021232D /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				BEBE72032A2CA35B0021232D /* DashboardFlow.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
