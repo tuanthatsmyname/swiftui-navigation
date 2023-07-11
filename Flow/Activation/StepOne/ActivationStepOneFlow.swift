@@ -4,6 +4,7 @@ import SwiftUINavigation
 struct ActivationStepOneFlow: View {
     enum Destination {
         case stepTwo
+        case modal
     }
 
     var onSuccessfullActivation: () -> Void
@@ -12,7 +13,12 @@ struct ActivationStepOneFlow: View {
 
     var body: some View {
         ActivationStepOneView(
-            onContinue: { destination = .stepTwo }
+            onContinue: {
+                destination = .stepTwo
+            },
+            onModal: {
+                destination = .modal
+            }
         )
         .navigationDestination(
             unwrapping: $destination,
@@ -23,6 +29,10 @@ struct ActivationStepOneFlow: View {
                     onSuccessfullActivation()
                 }
             )
+        }
+        .sheet(unwrapping: $destination, case: /Destination.modal) { _ in
+            Text("Modal")
+                .navigationTitle("Modal")
         }
     }
 }

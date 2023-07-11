@@ -12,7 +12,9 @@ struct ActivationFlow: View {
 
     var body: some View {
         ActivationView(
-            onContinue: { destination = .stepOne }
+            onContinue: {
+                destination = .stepOne
+            }
         )
         .navigationDestination(
             unwrapping: $destination,
@@ -20,7 +22,6 @@ struct ActivationFlow: View {
         ) { _ in
             ActivationStepOneFlow(
                 onSuccessfullActivation: {
-                    destination = nil
                     onSuccessfullActivation()
                 }
             )

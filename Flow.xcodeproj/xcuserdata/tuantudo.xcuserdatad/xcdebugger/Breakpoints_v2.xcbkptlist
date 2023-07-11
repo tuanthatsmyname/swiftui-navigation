@@ -3,4 +3,214 @@
    uuid = "9671FBC7-AE2D-47F3-B6E9-3CC17A91668A"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40FD7718-DE1A-4518-8C5A-1A95C3294ABB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Flow/Activation/StepOne/ActivationStepOneFlow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "40FD7718-DE1A-4518-8C5A-1A95C3294ABB - 48cdb1f8b49e6cb7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SwiftUI.Binding&lt;()&gt;) -&gt; Flow.ActivationStepTwoView in Flow.ActivationStepOneFlow.body.getter : some"
+                  moduleName = "Flow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuantudo/Desktop/Flow/Flow/Activation/StepOne/ActivationStepOneFlow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "328">
+               </Location>
+               <Location
+                  uuid = "40FD7718-DE1A-4518-8C5A-1A95C3294ABB - 48cdb1f8b49e6cd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SwiftUI.Binding&lt;()&gt;) -&gt; Flow.ActivationStepTwoView in Flow.ActivationStepOneFlow.body.getter : some"
+                  moduleName = "Flow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuantudo/Desktop/Flow/Flow/Activation/StepOne/ActivationStepOneFlow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BEA9D0C-C21F-48A9-BB00-D85281B203AF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Flow/Activation/ActivationFlow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "6BEA9D0C-C21F-48A9-BB00-D85281B203AF - 143f5f36d0749b64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flow.ActivationFlow.body.getter : some"
+                  moduleName = "Flow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuantudo/Desktop/Flow/Flow/Activation/ActivationFlow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "688">
+               </Location>
+               <Location
+                  uuid = "6BEA9D0C-C21F-48A9-BB00-D85281B203AF - d0724e6149ba58b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Flow.ActivationFlow.body.getter : some"
+                  moduleName = "Flow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuantudo/Desktop/Flow/Flow/Activation/ActivationFlow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BBFEBB38-0CE8-4BF3-A7DF-4DC000DD0C1F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Flow/Activation/ActivationFlow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "BBFEBB38-0CE8-4BF3-A7DF-4DC000DD0C1F - 40b8627cf3d7ea75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #2 (SwiftUI.Binding&lt;()&gt;) -&gt; Flow.ActivationStepOneFlow in Flow.ActivationFlow.body.getter : some"
+                  moduleName = "Flow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuantudo/Desktop/Flow/Flow/Activation/ActivationFlow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "BBFEBB38-0CE8-4BF3-A7DF-4DC000DD0C1F - 40b8627cf3d7ea75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #2 (SwiftUI.Binding&lt;()&gt;) -&gt; Flow.ActivationStepOneFlow in Flow.ActivationFlow.body.getter : some"
+                  moduleName = "Flow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuantudo/Desktop/Flow/Flow/Activation/ActivationFlow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCEFAB18-C679-48F7-B9D3-FE8FC0EF4EE0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Flow/Activation/StepOne/ActivationStepOneFlow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "DCEFAB18-C679-48F7-B9D3-FE8FC0EF4EE0 - 8f6535a86813f45c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in Flow.ActivationStepOneFlow.body.getter : some"
+                  moduleName = "Flow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuantudo/Desktop/Flow/Flow/Activation/StepOne/ActivationStepOneFlow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "DCEFAB18-C679-48F7-B9D3-FE8FC0EF4EE0 - 62563ae9d62a8e4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Flow.ActivationStepOneFlow.body.getter : some"
+                  moduleName = "Flow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuantudo/Desktop/Flow/Flow/Activation/StepOne/ActivationStepOneFlow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1726150C-77B4-4037-91AC-970FE07889D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Flow/Secret/SecretFlow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

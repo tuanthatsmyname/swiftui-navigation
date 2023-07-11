@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE2C86AC2A5DA12900945D97 /* SecretView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C86A82A5DA12900945D97 /* SecretView.swift */; };
+		BE2C86AD2A5DA12900945D97 /* SecretInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C86A92A5DA12900945D97 /* SecretInfoView.swift */; };
+		BE2C86AE2A5DA12900945D97 /* SecretFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C86AA2A5DA12900945D97 /* SecretFlow.swift */; };
+		BE2C86AF2A5DA12900945D97 /* SecretFinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C86AB2A5DA12900945D97 /* SecretFinishView.swift */; };
+		BE2C86B52A5DA34D00945D97 /* LegacySecretInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C86B12A5DA34D00945D97 /* LegacySecretInfoView.swift */; };
+		BE2C86B62A5DA34D00945D97 /* LegacySecretFinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C86B22A5DA34D00945D97 /* LegacySecretFinishView.swift */; };
+		BE2C86B72A5DA34D00945D97 /* LegacySecretFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C86B32A5DA34D00945D97 /* LegacySecretFlow.swift */; };
+		BE2C86B82A5DA34D00945D97 /* LegacySecretView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C86B42A5DA34D00945D97 /* LegacySecretView.swift */; };
 		BE9F501A2A28C43A00A6C281 /* FlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F50192A28C43A00A6C281 /* FlowApp.swift */; };
 		BE9F501E2A28C43B00A6C281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F501D2A28C43B00A6C281 /* Assets.xcassets */; };
 		BE9F50212A28C43B00A6C281 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F50202A28C43B00A6C281 /* Preview Assets.xcassets */; };
@@ -23,6 +31,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE2C86A82A5DA12900945D97 /* SecretView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretView.swift; sourceTree = "<group>"; };
+		BE2C86A92A5DA12900945D97 /* SecretInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretInfoView.swift; sourceTree = "<group>"; };
+		BE2C86AA2A5DA12900945D97 /* SecretFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretFlow.swift; sourceTree = "<group>"; };
+		BE2C86AB2A5DA12900945D97 /* SecretFinishView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretFinishView.swift; sourceTree = "<group>"; };
+		BE2C86B12A5DA34D00945D97 /* LegacySecretInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacySecretInfoView.swift; sourceTree = "<group>"; };
+		BE2C86B22A5DA34D00945D97 /* LegacySecretFinishView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacySecretFinishView.swift; sourceTree = "<group>"; };
+		BE2C86B32A5DA34D00945D97 /* LegacySecretFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacySecretFlow.swift; sourceTree = "<group>"; };
+		BE2C86B42A5DA34D00945D97 /* LegacySecretView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacySecretView.swift; sourceTree = "<group>"; };
 		BE9F50162A28C43A00A6C281 /* Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9F50192A28C43A00A6C281 /* FlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowApp.swift; sourceTree = "<group>"; };
 		BE9F501D2A28C43B00A6C281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +66,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE2C86A72A5DA11900945D97 /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				BE2C86AB2A5DA12900945D97 /* SecretFinishView.swift */,
+				BE2C86AA2A5DA12900945D97 /* SecretFlow.swift */,
+				BE2C86A92A5DA12900945D97 /* SecretInfoView.swift */,
+				BE2C86A82A5DA12900945D97 /* SecretView.swift */,
+			);
+			path = Secret;
+			sourceTree = "<group>";
+		};
+		BE2C86B02A5DA32E00945D97 /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				BE2C86B22A5DA34D00945D97 /* LegacySecretFinishView.swift */,
+				BE2C86B32A5DA34D00945D97 /* LegacySecretFlow.swift */,
+				BE2C86B12A5DA34D00945D97 /* LegacySecretInfoView.swift */,
+				BE2C86B42A5DA34D00945D97 /* LegacySecretView.swift */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
 		BE9F500D2A28C43A00A6C281 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +107,8 @@
 		BE9F50182A28C43A00A6C281 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				BE2C86B02A5DA32E00945D97 /* Legacy */,
+				BE2C86A72A5DA11900945D97 /* Secret */,
 				BEBE72022A2CA3490021232D /* Dashboard */,
 				BEBE71F32A2BBF760021232D /* Activation */,
 				BEBE71F02A2BBE320021232D /* Login */,
@@ -209,6 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2C86B82A5DA34D00945D97 /* LegacySecretView.swift in Sources */,
+				BE2C86AC2A5DA12900945D97 /* SecretView.swift in Sources */,
+				BE2C86AF2A5DA12900945D97 /* SecretFinishView.swift in Sources */,
+				BE2C86B52A5DA34D00945D97 /* LegacySecretInfoView.swift in Sources */,
+				BE2C86B62A5DA34D00945D97 /* LegacySecretFinishView.swift in Sources */,
 				BEBE71F72A2BC0520021232D /* ActivationView.swift in Sources */,
 				BEBE71FB2A2BC06C0021232D /* ActivationStepTwoView.swift in Sources */,
 				BEBE71F92A2BC0610021232D /* ActivationStepOneView.swift in Sources */,
@@ -216,9 +261,12 @@
 				BE9F501A2A28C43A00A6C281 /* FlowApp.swift in Sources */,
 				BE9F50282A28C47C00A6C281 /* RootFlow.swift in Sources */,
 				BEBE72042A2CA35B0021232D /* DashboardFlow.swift in Sources */,
+				BE2C86AD2A5DA12900945D97 /* SecretInfoView.swift in Sources */,
 				BEBE71F22A2BBE9D0021232D /* LoginView.swift in Sources */,
 				BEBE71EF2A2BBE2C0021232D /* LoginFlow.swift in Sources */,
 				BEBE71F52A2BC00D0021232D /* ActivationFlow.swift in Sources */,
+				BE2C86AE2A5DA12900945D97 /* SecretFlow.swift in Sources */,
+				BE2C86B72A5DA34D00945D97 /* LegacySecretFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
