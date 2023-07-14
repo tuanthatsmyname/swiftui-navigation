@@ -2,9 +2,12 @@ import SwiftUI
 import SwiftUINavigation
 
 struct SecretFlow: View {
-    enum Destination: Hashable {
-        case info
-        case finish
+    enum Destination {
+        case info(InfoDestination?)
+
+        enum InfoDestination {
+            case finish
+        }
     }
 
     @State private var destination: Destination?
@@ -14,31 +17,22 @@ struct SecretFlow: View {
         SecretView(
             viewModel: SecretViewModel(
                 onContinue: {
-                    destination = .info
+                    destination = .info(nil)
                 }
             )
         )
-        .navigationDestination(unwrapping: $destination, case: /Destination.info) { _ in
+        .navigationDestination(unwrapping: $destination, case: /Destination.info(nil)) { infoDestination in
             SecretInfoView {
-                onSecretNoMore()
+                destination = .info(.finish)
             }
-        }
-        .navigationDestination(unwrapping: $destination, case: /Destination.finish) { _ in
-            SecretFinishView {
-                onSecretNoMore()
-            }
-        }
-//        .navigationDestination(for: Destination.self) { destination in
-//            switch destination {
-//            case .info:
-//                SecretInfoView {
-//                    self.destination = .finish
-//                }
-//            case .finish:
+//            .navigationDestination(unwrapping: $destination, case: /Destination.info(.finish)) { _ in
 //                SecretFinishView {
 //                    onSecretNoMore()
 //                }
 //            }
-//        }
+        }
     }
 }
+
+// TODO: this is not working
+// both navigationDestination triggers navigation

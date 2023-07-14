@@ -206,10 +206,138 @@
             filePath = "Flow/Secret/SecretFlow.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32C6C52C-2D1F-47EC-BC7E-CD802434EBBD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/Flow-bnovowoajcbxiublvorholmkpsti/SourcePackages/checkouts/swiftui-navigation/Sources/SwiftUINavigation/NavigationDestination.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "navigationDestination(unwrapping:case:@ViewBuilder:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BFBAFBF3-71DE-42B2-82C7-D27402AF4567"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/Flow-bnovowoajcbxiublvorholmkpsti/SourcePackages/checkouts/swiftui-navigation/Sources/SwiftUINavigation/NavigationDestination.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "navigationDestination(unwrapping:@ViewBuilder:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BFBAFBF3-71DE-42B2-82C7-D27402AF4567 - 4f7f598d6b1a2e94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.View.navigationDestination&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_1: SwiftUI.View&gt;(unwrapping: SwiftUI.Binding&lt;Swift.Optional&lt;&#x3c4;_1_0&gt;&gt;, destination: (SwiftUI.Binding&lt;&#x3c4;_1_0&gt;) -&gt; &#x3c4;_1_1) -&gt; some"
+                  moduleName = "Flow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuantudo/Library/Developer/Xcode/DerivedData/Flow-bnovowoajcbxiublvorholmkpsti/SourcePackages/checkouts/swiftui-navigation/Sources/SwiftUINavigation/NavigationDestination.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "1548">
+               </Location>
+               <Location
+                  uuid = "BFBAFBF3-71DE-42B2-82C7-D27402AF4567 - a74cb8767f9d305c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Optional&lt;&#x3c4;_1_1&gt; in SwiftUI.View.navigationDestination&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_1: SwiftUI.View&gt;(unwrapping: SwiftUI.Binding&lt;Swift.Optional&lt;&#x3c4;_1_0&gt;&gt;, destination: (SwiftUI.Binding&lt;&#x3c4;_1_0&gt;) -&gt; &#x3c4;_1_1) -&gt; some"
+                  moduleName = "Flow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuantudo/Library/Developer/Xcode/DerivedData/Flow-bnovowoajcbxiublvorholmkpsti/SourcePackages/checkouts/swiftui-navigation/Sources/SwiftUINavigation/NavigationDestination.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "388">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66A41C60-869A-44BF-9E41-A9BF49045DB2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/Flow-bnovowoajcbxiublvorholmkpsti/SourcePackages/checkouts/swiftui-navigation/Sources/SwiftUINavigation/Binding.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "isPresent()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "66A41C60-869A-44BF-9E41-A9BF49045DB2 - b4e14e349b0b92e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.Binding.isPresent&lt;&#x3c4;_0_0 where &#x3c4;_0_0 == Swift.Optional&lt;&#x3c4;_1_0&gt;&gt;() -&gt; SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "Flow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuantudo/Library/Developer/Xcode/DerivedData/Flow-bnovowoajcbxiublvorholmkpsti/SourcePackages/checkouts/swiftui-navigation/Sources/SwiftUINavigation/Binding.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "66A41C60-869A-44BF-9E41-A9BF49045DB2 - 98822a74cb34cdd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Bool in SwiftUI.Binding.isPresent&lt;&#x3c4;_0_0 where &#x3c4;_0_0 == Swift.Optional&lt;&#x3c4;_1_0&gt;&gt;() -&gt; SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "Flow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuantudo/Library/Developer/Xcode/DerivedData/Flow-bnovowoajcbxiublvorholmkpsti/SourcePackages/checkouts/swiftui-navigation/Sources/SwiftUINavigation/Binding.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C8A28FA-8CBA-4CD2-82CA-77F4FF912069"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/Flow-bnovowoajcbxiublvorholmkpsti/SourcePackages/checkouts/swiftui-navigation/Sources/SwiftUINavigation/Binding.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "isPresent()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

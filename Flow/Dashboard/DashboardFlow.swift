@@ -29,17 +29,7 @@ struct DashboardFlow: View {
 
             Button("Legacy") {
                 onLegacy()
-//                destination = .legacy
             }
         }
-//        .navigationDestination(unwrapping: $destination, case: /Destination.legacy) { _ in
-//            NavigationView {
-//                LegacySecretFlow(
-//                    onSecretNoMore: {
-//                        destination = nil
-//                    }
-//                )
-//            }
-//        }
     }
 }

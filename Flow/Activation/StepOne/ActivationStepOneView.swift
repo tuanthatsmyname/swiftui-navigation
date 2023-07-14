@@ -2,16 +2,16 @@ import SwiftUI
 
 struct ActivationStepOneView: View {
     var onContinue: () -> Void
-    var onModal: () -> Void
+    var onInformation: () -> Void
 
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             Button("Continue") {
                 onContinue()
             }
 
-            Button("Modal") {
-                onModal()
+            Button("Info") {
+                onInformation()
             }
         }
         .navigationTitle("Step 1")

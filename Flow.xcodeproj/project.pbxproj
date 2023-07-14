@@ -15,6 +15,8 @@
 		BE2C86B62A5DA34D00945D97 /* LegacySecretFinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C86B22A5DA34D00945D97 /* LegacySecretFinishView.swift */; };
 		BE2C86B72A5DA34D00945D97 /* LegacySecretFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C86B32A5DA34D00945D97 /* LegacySecretFlow.swift */; };
 		BE2C86B82A5DA34D00945D97 /* LegacySecretView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C86B42A5DA34D00945D97 /* LegacySecretView.swift */; };
+		BE7B203D2A600D13001BFEBB /* AppStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7B203C2A600D13001BFEBB /* AppStartView.swift */; };
+		BE7B203F2A600FA6001BFEBB /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7B203E2A600FA6001BFEBB /* InformationView.swift */; };
 		BE9F501A2A28C43A00A6C281 /* FlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F50192A28C43A00A6C281 /* FlowApp.swift */; };
 		BE9F501E2A28C43B00A6C281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F501D2A28C43B00A6C281 /* Assets.xcassets */; };
 		BE9F50212A28C43B00A6C281 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F50202A28C43B00A6C281 /* Preview Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		BE2C86B22A5DA34D00945D97 /* LegacySecretFinishView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacySecretFinishView.swift; sourceTree = "<group>"; };
 		BE2C86B32A5DA34D00945D97 /* LegacySecretFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacySecretFlow.swift; sourceTree = "<group>"; };
 		BE2C86B42A5DA34D00945D97 /* LegacySecretView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacySecretView.swift; sourceTree = "<group>"; };
+		BE7B203C2A600D13001BFEBB /* AppStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStartView.swift; sourceTree = "<group>"; };
+		BE7B203E2A600FA6001BFEBB /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		BE9F50162A28C43A00A6C281 /* Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9F50192A28C43A00A6C281 /* FlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowApp.swift; sourceTree = "<group>"; };
 		BE9F501D2A28C43B00A6C281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +92,22 @@
 			path = Legacy;
 			sourceTree = "<group>";
 		};
+		BE7B203B2A600D05001BFEBB /* AppStart */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B203C2A600D13001BFEBB /* AppStartView.swift */,
+			);
+			path = AppStart;
+			sourceTree = "<group>";
+		};
+		BE7B20402A600FE7001BFEBB /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B203E2A600FA6001BFEBB /* InformationView.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
 		BE9F500D2A28C43A00A6C281 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +127,7 @@
 		BE9F50182A28C43A00A6C281 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				BE7B203B2A600D05001BFEBB /* AppStart */,
 				BE2C86B02A5DA32E00945D97 /* Legacy */,
 				BE2C86A72A5DA11900945D97 /* Secret */,
 				BEBE72022A2CA3490021232D /* Dashboard */,
@@ -142,6 +163,7 @@
 			children = (
 				BEBE71F42A2BC00D0021232D /* ActivationFlow.swift */,
 				BEBE71F62A2BC0520021232D /* ActivationView.swift */,
+				BE7B20402A600FE7001BFEBB /* Information */,
 				BEBE71FE2A2C98370021232D /* StepOne */,
 				BEBE71FF2A2C983C0021232D /* StepTwo */,
 			);
@@ -153,7 +175,6 @@
 			children = (
 				BEBE71F82A2BC0610021232D /* ActivationStepOneView.swift */,
 				BEBE72002A2C98600021232D /* ActivationStepOneFlow.swift */,
-				BEBE72032A2CA35B0021232D /* DashboardFlow.swift */,
 			);
 			path = StepOne;
 			sourceTree = "<group>";
@@ -169,6 +190,7 @@
 		BEBE72022A2CA3490021232D /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				BEBE72032A2CA35B0021232D /* DashboardFlow.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -254,11 +276,13 @@
 				BE2C86AF2A5DA12900945D97 /* SecretFinishView.swift in Sources */,
 				BE2C86B52A5DA34D00945D97 /* LegacySecretInfoView.swift in Sources */,
 				BE2C86B62A5DA34D00945D97 /* LegacySecretFinishView.swift in Sources */,
+				BE7B203F2A600FA6001BFEBB /* InformationView.swift in Sources */,
 				BEBE71F72A2BC0520021232D /* ActivationView.swift in Sources */,
 				BEBE71FB2A2BC06C0021232D /* ActivationStepTwoView.swift in Sources */,
 				BEBE71F92A2BC0610021232D /* ActivationStepOneView.swift in Sources */,
 				BEBE72012A2C98600021232D /* ActivationStepOneFlow.swift in Sources */,
 				BE9F501A2A28C43A00A6C281 /* FlowApp.swift in Sources */,
+				BE7B203D2A600D13001BFEBB /* AppStartView.swift in Sources */,
 				BE9F50282A28C47C00A6C281 /* RootFlow.swift in Sources */,
 				BEBE72042A2CA35B0021232D /* DashboardFlow.swift in Sources */,
 				BE2C86AD2A5DA12900945D97 /* SecretInfoView.swift in Sources */,
