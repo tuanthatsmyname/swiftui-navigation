@@ -1,3 +1,4 @@
+import Root
 import SwiftUI
 
 @main
