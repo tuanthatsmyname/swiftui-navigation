@@ -6,20 +6,21 @@ import SwiftUI
 import SwiftUINavigation
 
 public struct RootFlow: View {
-    private enum State {
-        case appStart
+    private enum AppState {
+        case start
         case login
         case activation
         case dashboard
     }
 
-    @SwiftUI.State private var state: State = .appStart
+    @State private var state: AppState = .start
+    private let dashboardFactory = DashboardFactory()
 
     public init() {}
 
     public var body: some View {
         Switch($state) {
-            CaseLet(/State.appStart) { _ in
+            CaseLet(/AppState.start) { _ in
                 NavigationStack {
                     AppStartFlow(
                         onFinished: {
@@ -29,7 +30,7 @@ public struct RootFlow: View {
                 }
             }
 
-            CaseLet(/State.login) { _ in
+            CaseLet(/AppState.login) { _ in
                 NavigationStack {
                     LoginFlow(
                         onSuccessfullLogin: {
@@ -40,7 +41,7 @@ public struct RootFlow: View {
                 }
             }
 
-            CaseLet(/State.activation) { _ in
+            CaseLet(/AppState.activation) { _ in
                 NavigationStack {
                     ActivationFlow(
                         onSuccessfullActivation: {
@@ -51,9 +52,9 @@ public struct RootFlow: View {
                 }
             }
 
-            CaseLet(/State.dashboard) { _ in
+            CaseLet(/AppState.dashboard) { _ in
                 NavigationStack {
-                    DashboardFlow { action in
+                    dashboardFactory.makeDashboardFlow { action in
                         switch action {
                         case .logout:
                             state = .login

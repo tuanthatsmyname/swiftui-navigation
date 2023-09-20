@@ -29,14 +29,14 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../Library"),
+        .package(path: "../Feature"),
         .package(url: "https://github.com/pointfreeco/swiftui-navigation", .upToNextMajor(from: "1.0.0"))
     ],
     targets: [
         .target(
             name: "Activation",
             dependencies: [
-                .product(name: "Navigation", package: "Library"),
-                .product(name: "SwiftUINavigation", package: "swiftui-navigation")
+                .product(name: "Navigation", package: "Library")
             ]
         ),
         .target(
@@ -48,7 +48,10 @@ let package = Package(
         .target(
             name: "Dashboard",
             dependencies: [
-                .product(name: "SwiftUINavigation", package: "swiftui-navigation")
+                .product(name: "Chat", package: "Feature"),
+                .product(name: "Meeting", package: "Feature"),
+                .product(name: "Mortgage", package: "Feature"),
+                .product(name: "Navigation", package: "Library")
             ]
         ),
         .target(

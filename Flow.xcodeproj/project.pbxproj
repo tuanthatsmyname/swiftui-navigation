@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE7D4F2A2ABAE2F2008FC467 /* Feature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Feature; sourceTree = "<group>"; };
 		BE9E04D72AB1F76E0023C9F9 /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
 		BE9F50162A28C43A00A6C281 /* Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9F50192A28C43A00A6C281 /* FlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowApp.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 			children = (
 				BEC366B92AB31F3800FC51A7 /* App */,
 				BE9E04D72AB1F76E0023C9F9 /* Core */,
+				BE7D4F2A2ABAE2F2008FC467 /* Feature */,
 				BEA153EB2AB2FB4900608BA5 /* Library */,
 				BE9F501D2A28C43B00A6C281 /* Assets.xcassets */,
 				BE9F501F2A28C43B00A6C281 /* Preview Content */,

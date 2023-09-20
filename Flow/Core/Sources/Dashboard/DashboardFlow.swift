@@ -1,3 +1,4 @@
+import Navigation
 import SwiftUI
 
 public struct DashboardFlow: View {
@@ -7,24 +8,39 @@ public struct DashboardFlow: View {
     }
 
     private enum Destination {
+        case mortgage
+        case meeting
     }
+
+    let onAction: (Action) -> Void
+    let factory: DashboardFactory
 
     @State private var destination: Destination?
-    private let onAction: (Action) -> Void
-
-    public init(onAction: @escaping (Action) -> Void) {
-        self.onAction = onAction
-    }
 
     public var body: some View {
-        VStack(spacing: 20) {
-            Button("Log out") {
+        factory.makeDashboardView {
+            switch $0 {
+            case .logout:
                 onAction(.logout)
-            }
-
-            Button("Deactivate") {
+            case .deactivate:
                 onAction(.deactivate)
+            case .mortgage:
+                destination = .mortgage
+            case .meeting:
+                destination = .meeting
             }
+        }
+        .navigationDestination(
+            unwrapping: $destination,
+            case: /Destination.meeting
+        ) { _ in
+            factory.makeMeetingFlow()
+        }
+        .navigationDestination(
+            unwrapping: $destination,
+            case: /Destination.mortgage
+        ) { _ in
+            factory.makeMortgageFlow()
         }
     }
 }
