@@ -16,19 +16,11 @@ public final class DashboardFactory {
         let chatFactory = ChatFactory()
         self.chatFactory = ChatFactory()
         let meetingFactory = MeetingFactory(
-            chatFactory: .init(
-                makeChatFlow: {
-                    chatFactory.makeChatFlow()
-                }
-            )
+            chatFactory: .init(makeChatFlow: chatFactory.makeChatFlow)
         )
         self.meetingFactory = meetingFactory
         self.mortgageFactory = MortgageFactory(
-            meetingFactory: .init(
-                makeMeetingFlow: {
-                    meetingFactory.makeMeetingFlow()
-                }
-            )
+            meetingFactory: .init(makeMeetingFlow: meetingFactory.makeMeetingFlow)
         )
     }
 

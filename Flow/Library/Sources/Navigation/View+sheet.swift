@@ -1,14 +1,15 @@
 import SwiftUI
-@_exported import SwiftUINavigation
+import SwiftUINavigation
 
 public extension View {
-    func navigationDestination<Enum, ChildCase, ParentCase, Destination: View>(
+    @MainActor func sheet<Enum, ChildCase, ParentCase, Content: View>(
         unwrapping enum: Binding<Enum?>,
         childCase childCasePath: CasePath<ParentCase?, ChildCase>,
         parentCase parentCasePath: CasePath<Enum, ParentCase?>,
-        @ViewBuilder destination: (Binding<ChildCase>) -> Destination
+        onDismiss: (() -> Void)? = nil,
+        @ViewBuilder content: @escaping (Binding<ChildCase>) -> Content
     ) -> some View {
-        self.navigationDestination(
+        self.sheet(
             unwrapping: Binding(
                 get: {
                     `enum`.wrappedValue
@@ -18,7 +19,8 @@ public extension View {
                 }
             ),
             case: parentCasePath .. childCasePath,
-            destination: destination
+            onDismiss: onDismiss,
+            content: content
         )
     }
 }

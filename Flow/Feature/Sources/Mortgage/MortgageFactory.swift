@@ -28,11 +28,21 @@ extension MortgageFactory {
         meetingFactory.makeMeetingFlow()
     }
 
-    func makeMortgageView(onAction: @escaping (MortgageView.Action) -> Void) -> some View {
+    func makeMortgageView(
+        onAction: @escaping (MortgageView.Action
+    ) -> Void) -> some View {
         MortgageView(onAction: onAction)
     }
 
-    func makeMortgageDetailView() -> some View {
-        MortgageDetailView()
+    func makeMortgageDetailView(
+        onOpenMenu: @escaping () -> Void
+    ) -> some View {
+        MortgageDetailView(onOpenMenu: onOpenMenu)
+    }
+
+    func makeMortgageDetailMenuView(
+        onSelect: @escaping () -> Void
+    ) -> some View {
+        MortgageDetailMenuView(onSelect: onSelect)
     }
 }

@@ -1,11 +1,15 @@
 import SwiftUI
 
 struct MortgageDetailView: View {
+    let onOpenMenu: () -> Void
+
     var body: some View {
-        Text("Mortgage Detail")
+        Button("Open Menu") {
+            onOpenMenu()
+        }
     }
 }
 
 #Preview {
-    MortgageDetailView()
+    MortgageDetailView(onOpenMenu: {})
 }
