@@ -27,24 +27,26 @@ public struct ActivationFlow: View {
             unwrapping: $destination,
             case: /Destination.adaptiveActivation
         ) { _ in
+            // this is where the whole activation flow is started
+            // and then device setup flow is shown after successfull activation
+            // unfortunately we need to do this with finishedAdaptiveActivationFlowBuilder
+            // because we cannot use .navigationDestination (check the previous commits)
+            // .navigationDestination is created when the whole view is created
+            // so when device setup flow was created with .navigationDestination
+            // the flow is attached to the first view of the flow, not the last view
+            // this is why with navigationDestination the flow was poppped and new flow was pushed
+            // if we want continious navigation then all of this has to happen inside of the flow
             AdaptiveActivationFlow(
-                onFinishedAdaptiveActivation: { userID in
-                    destination = .adaptiveActivation(.deviceSetup(userID))
-                },
                 onResetActivation: {
                     destination = nil
+                },
+                finishedAdaptiveActivationFlowBuilder: { userID in
+                    DeviceSetupFlow(
+                        userID: userID,
+                        onFinishedDeviceSetup: onSuccessfullActivation
+                    )
                 }
             )
-            .navigationDestination(
-                unwrapping: $destination,
-                childCase: /Destination.AdaptiveActivationDestination.deviceSetup,
-                parentCase: /Destination.adaptiveActivation
-            ) { userID in
-                DeviceSetupFlow(
-                    userID: userID.wrappedValue,
-                    onFinishedDeviceSetup: onSuccessfullActivation
-                )
-            }
         }
     }
 }

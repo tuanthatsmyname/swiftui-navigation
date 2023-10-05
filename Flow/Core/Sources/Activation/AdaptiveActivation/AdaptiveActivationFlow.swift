@@ -1,7 +1,7 @@
 import Navigation
 import SwiftUI
 
-struct AdaptiveActivationFlow: View {
+struct AdaptiveActivationFlow<Flow: View>: View {
     private enum Destination {
         case verificationCode(VerificationCodeDestination?)
 
@@ -9,13 +9,32 @@ struct AdaptiveActivationFlow: View {
             case confirm(ConfirmDestination?)
 
             enum ConfirmDestination {
-                case finish
+                case finish(FinishDestination?)
+
+                enum FinishDestination {
+                    case deviceSetup(userID: String)
+                }
             }
+        }
+
+        static var verificationCodeCasePath: CasePath<
+            Destination,
+            Destination.VerificationCodeDestination?
+        > {
+            /Destination.verificationCode
+        }
+
+        // TODO: eplore this option more
+        static var confirmCasePath: CasePath<
+            Destination.VerificationCodeDestination?,
+            Destination.VerificationCodeDestination.ConfirmDestination?
+        > {
+            /Destination.VerificationCodeDestination.confirm
         }
     }
 
-    let onFinishedAdaptiveActivation: (_ userID: String) -> Void
     let onResetActivation: () -> Void
+    @ViewBuilder let finishedAdaptiveActivationFlowBuilder: (_ userID: String) -> Flow
 
     @State private var destination: Destination?
 
@@ -23,6 +42,8 @@ struct AdaptiveActivationFlow: View {
         SubmitUsernameView(
             onSubmittedUsername: {
                 destination = .verificationCode(nil)
+                // TODO: explore this more
+//                destination = Destination.verificationCodeCasePath.embed(nil)
             }
         )
         .navigationDestination(
@@ -41,8 +62,8 @@ struct AdaptiveActivationFlow: View {
             ) { _ in
                 ConfirmView(
                     onConfirm: {
-                        destination = .verificationCode(.confirm(.finish))
-                    }, 
+                        destination = .verificationCode(.confirm(.finish(nil)))
+                    },
                     onResetActivation: {
                         onResetActivation()
                     }
@@ -50,15 +71,24 @@ struct AdaptiveActivationFlow: View {
                 .navigationDestination(
                     unwrapping: $destination,
                     childCase: /Destination.VerificationCodeDestination.ConfirmDestination.finish,
-                    parentCase: /Destination.verificationCode .. /Destination.VerificationCodeDestination.confirm,
-                    destination: { _ in
-                        FinishActivationView(
-                            onSuccessfullActivation: { userID in
-                                onFinishedAdaptiveActivation(userID)
-                            }
-                        )
+                    parentCase: (/Destination.verificationCode)
+                        .appending(path: /Destination.VerificationCodeDestination.confirm)
+                ) { _ in
+                    FinishActivationView(
+                        onSuccessfullActivation: { userID in
+                            destination = .verificationCode(.confirm(.finish(.deviceSetup(userID: userID))))
+                        }
+                    )
+                    .navigationDestination(
+                        unwrapping: $destination,
+                        childCase: /Destination.VerificationCodeDestination.ConfirmDestination.FinishDestination.deviceSetup,
+                        parentCase: (/Destination.verificationCode)
+                            .appending(path: /Destination.VerificationCodeDestination.confirm)
+                            .appending(path: /Destination.VerificationCodeDestination.ConfirmDestination.finish)
+                    ) { userID in
+                        finishedAdaptiveActivationFlowBuilder(userID.wrappedValue)
                     }
-                )
+                }
             }
         }
     }
