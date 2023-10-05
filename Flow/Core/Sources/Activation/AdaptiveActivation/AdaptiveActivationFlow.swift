@@ -15,6 +15,7 @@ struct AdaptiveActivationFlow: View {
     }
 
     let onFinishedAdaptiveActivation: (_ userID: String) -> Void
+    let onResetActivation: () -> Void
 
     @State private var destination: Destination?
 
@@ -41,6 +42,9 @@ struct AdaptiveActivationFlow: View {
                 ConfirmView(
                     onConfirm: {
                         destination = .verificationCode(.confirm(.finish))
+                    }, 
+                    onResetActivation: {
+                        onResetActivation()
                     }
                 )
                 .navigationDestination(

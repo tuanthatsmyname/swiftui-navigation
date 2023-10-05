@@ -30,6 +30,9 @@ public struct ActivationFlow: View {
             AdaptiveActivationFlow(
                 onFinishedAdaptiveActivation: { userID in
                     destination = .adaptiveActivation(.deviceSetup(userID))
+                },
+                onResetActivation: {
+                    destination = nil
                 }
             )
             .navigationDestination(
